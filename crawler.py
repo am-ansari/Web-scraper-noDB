@@ -106,7 +106,7 @@ def findUrls(parentUrl,UrlArr,depth,urllistcsv):
             try:
                 if urlDict[url]['SPAM'] == False and urlDict[url]['PARSEDFQ'] == False:
                     time.sleep(sleepTimer)
-                    user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7); Abdullah/AcademicProject'
+                    user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7);'
                     headers={'User-Agent':user_agent} 
                     
                     if rp.can_fetch("*", url):
